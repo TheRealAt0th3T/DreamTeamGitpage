@@ -7,6 +7,14 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+h2{
+  font-size: 20px;
+}
+
+p{
+  font-size: 14px;
+}
+
 .sidenav {
   height: 100%;
   width: 160px;
@@ -17,6 +25,7 @@ body {
   background-color: #111;
   overflow-x: hidden;
   padding-top: 20px;
+  font-size: 20px;
 }
 
 .sidenav a {
@@ -55,18 +64,34 @@ body {
 
 <div class="main">
   <img src="https://cdn.discordapp.com/attachments/933032870644174871/954550934967566366/20220317_212824-01.jpeg" width="30%" height="30%" alt="Acclaim Streamer">
-  <h2>The Project</h2>
+  <h1> Acclaim X BSU's DreamStream </h1>
+  <h2> Amara Tariq, Brandon Fung, Angel Legaspi, and John Capone </h2>
+  <h2>Abstract</h2>
   <p>Acclaim, a company dedicated to supporting up and coming streamers, needed easier facilitated interactions between their streamers and 
-  viewers and the means of reward distribution. The proposed solution to help these influencers is to create a bot for each of the platforms
-  Twitch and YouTube. These bots can monitor the live chat and respond to viewers, all while keeping track of milestones for the streamer.</p>
+    viewers and the means of reward distribution. The proposed solution to help these influencers is to create a bot for each of the platforms
+    Twitch and YouTube. These bots can monitor the live chat and respond to viewers, all while keeping track of milestones for the streamer.
+  </p>
+  <p>The bot will be deployed on Acclaim's servers, with streamer's accessing the bot via their Acclaim dashboard. Through the live chat, the
+    streamer will be able to interact with the bot and type commands in to start a giveaway, change their stream game and tile, and overall increase
+    interactivity with the audience. 
+  </p>
   <h2>How the bot works</h2>
-  <p> The bot will be running on Acclaim's servers, while streamers can access their bot via their Acclaim dashboards. INSERT DASHBOARD PHOTO 
-  As long as a streamer has browser access and stable internet. From the dashboard, the user can control what commands they allow in chat,
-  create new commands, and alter their milestones as they grow as streamers.</p>
-  <p> While the bot is in the streamer's chat, it will monitor the live chat and be able to respond to commands, both from the audience and their mods,
-    and even some easter egg abilities are available to the streamer. Mods will be able to access unique commands only available to them, such as starting
-  a giveaway or even updating the streamer's game title.</p>
-  <h2> Challenges Faced </h2>
+  <p> The bot will be running on Acclaim's servers, while streamers can access their bot via their Acclaim dashboards. We created a prototype of what
+    the dashboard could look like as part of this prototype. INSERT DASHBOARD PHOTO 
+    As long as a streamer has browser access and stable internet, from the dashboard, they can control what commands they allow in chat,
+    create new commands, and alter their milestones as they grow as streamers.
+  </p>
+  <p> While the bot is in the streamer's chat, it will monitor the live chat and be able to respond to commands, both from the audience and their moderators,
+    and even some easter egg abilities are available to the streamer. Moderators will be able to access unique commands only available to them, such as starting
+    a giveaway or even updating the streamer's game title.
+  </p>
+  <p>One example of bot and audience interaction is with giveaways. Giveaways can be triggered by moderators typing in "!giveaway start", but can also be triggered by reaching goals and milestones 
+    that the streamer setup through their dashboard. So if a streamer reaches their chat milestone, which is the number of chat interactions, the bot auto starts a giveaway. Audience members
+    can enter the giveaways by typing "!enter" in to the chat and the bot will add them to the entered array it has stored. Moderators can then end giveaways via "!giveaway stop". 
+  </p>
+  <p>
+    The bot is able to keep track of multiple streams at once, and keeps track of data individually for each stream. This is done by using Amazon Web Services and storing information in the database.
+  </p>
   <h2> The Future of this Project </h2>
 </div>
    
