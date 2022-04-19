@@ -1,0 +1,52 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 42px;
+}
+
+video {
+    display: block;
+    width: 100%;
+}
+
+.feature {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.display {
+    box-shadow: 0 10px 16px 0 rgb(0 0 0 / 30%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
+    border: thin solid black;
+    border-radius: 5px;
+    margin: 36px 36px;
+}
+
+.video {
+    width: 45%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    z-index: 2;
+}
+
+#demo5 {
+    width: 35%;
+}
+
+.description {
+    width: 30%;
+}
+
+.description p {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1200px) {
+  .feature {
+      width: 100%;
+      flex-direction: column;
+  }
+}

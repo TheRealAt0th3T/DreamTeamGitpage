@@ -1,70 +1,95 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: "Lato", sans-serif;
-}
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/demo.css">
+    </head>
 
-h2{
-  font-size: 20px;
-}
+    <body>
 
-p{
-  font-size: 14px;
-}
+        <div class="sidenav">
+            <a href="index.html">Home</a>
+            <a href="https://github.com/cs481-ekh/s22-dream-stream">Project</a>
+            <a href="demo.html">Demos</a>
+            <a href="team.html">Meet the Team</a>
+            <a href="https://acclaim.gg/">Acclaim</a>
+        </div>
 
-.sidenav {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
-  font-size: 20px;
-}
+        <div class="main">
+            <h1>Demos</h1>
+            <div class="feature">
+                <div class="display video">
+                    <video id="demo1" playsinline autoplay muted loop>
+                        <source src="video/demo1.webm" type="video/webm"/>
+                        <p>Your browser does not support video playback.</p>
+                    </video>
+                </div>
+                <div class="description">
+                    <h2>Giveaway-focused commands</h2>
+                    <p>The Acclaim bot for Twitch and YouTube has commands built
+                        around easily creating giveaways to keep viewers engaged
+                        to your stream while you reward them for their support.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="description">
+                    <h2>Command Management</h2>
+                    <p>The built-in command management page in the streamer dashboards
+                        allows you to easily change settings of the default commands
+                        to control how often people are able to use commands, as well
+                        limit who can use each command.</p>
+                </div>
+                <div class="display video">
+                    <video id="demo2" playsinline autoplay muted loop>
+                        <source src="video/demo2.webm" type="video/webm"/>
+                        <p>Your browser does not support video playback.</p>
+                    </video>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="display video">
+                    <video id="demo3" playsinline autoplay muted loop>
+                        <source src="video/demo3.webm" type="video/webm"/>
+                        <p>Your browser does not support video playback.</p>
+                    </video>
+                </div>
+                <div class="description">
+                    <h2>Milestone settings customization</h2>
+                    <p>We have created milestones for you and your viewers
+                        to celebrate different engagement goals, such as reaching
+                        a certain amount of unique chatters and having a number of
+                        chat messages sent. The settings page allows you to customize
+                        the thresholds for each milestone to fit the goals that
+                        you want to reach.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="description">
+                    <h2>Easy custom command creation</h2>
+                    <p>The Acclaim bot allows you to create personalized commands
+                        for your viewers to use in your chat to easily give them
+                        the info that they may be looking for. This allows you to
+                        focus on keeping your stream engaged.</p>
+                </div>
+                <div class="display video">
+                    <video id="demo4" playsinline autoplay muted loop>
+                        <source src="video/demo4.webm" type="video/webm"/>
+                        <p>Your browser does not support video playback.</p>
+                    </video>
+                </div>
+            </div>
+            <div class="feature">
+                <img class="display" id="demo5" src="img/demo5.png" alt="Chat Statistics Dashboard"/>
+                <div class="description">
+                    <h2>Chat Statistics Dashboard</h2>
+                    <p>The built-in streamer dashboard allows you to see how well
+                        your stream has been doing in regards of engagement. You can see a top 10
+                        leaderboard for your most active chatters, as well as
+                        what commands are mostly used.</p>
+                </div>
+            </div>
+        </div>
 
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.main {
-  margin-left: 160px; 
-  font-size: 28px; 
-  padding: 0px 10px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
-</head>
-  
-<body>
-
-<div class="sidenav">
-  <a href="https://github.com/cs481-ekh/s22-dream-stream">Project</a>
-  <a href="demo.html">Demos</a>
-  <a href="team.html">Meet the Team</a>
-  <a href="https://acclaim.gg/">Acclaim</a>
-</div>
-
-<div class="main">
-  <!--- TODO: FILL BODY WITH DEMO VIDEOS + EXPLAINATION -->
-</div>
-   
-</body>
-</html> 
+    </body>
+</html>
