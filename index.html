@@ -1,98 +1,49 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: "Lato", sans-serif;
-}
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/demo.css">
+    </head>
+    <body>
 
-h2{
-  font-size: 20px;
-}
+        <div class="sidenav">
+            <a href="index.html">Home</a>
+            <a href="https://github.com/cs481-ekh/s22-dream-stream">Project</a>
+            <a href="demo.html">Demos</a>
+            <a href="https://acclaim.gg/">Acclaim</a>
+        </div>
 
-p{
-  font-size: 14px;
-}
-
-.sidenav {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
-  font-size: 20px;
-}
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.main {
-  margin-left: 160px; 
-  font-size: 28px; 
-  padding: 0px 10px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
-</head>
-  
-<body>
-
-<div class="sidenav">
-  <a href="https://github.com/cs481-ekh/s22-dream-stream">Project</a>
-  <a href="demo.html">Demos</a>
-  <a href="https://acclaim.gg/">Acclaim</a>
-</div>
-
-<div class="main">
-  <img src="https://cdn.discordapp.com/attachments/933032870644174871/954550934967566366/20220317_212824-01.jpeg" width="30%" height="30%" alt="Acclaim Streamer">
-  <h1> Acclaim X BSU's DreamStream </h1>
-  <h2> Amara Tariq, Brandon Fung, Angel Legaspi, and John Capone </h2>
-  <h2>Abstract</h2>
-  <p>Acclaim, a company dedicated to supporting up and coming streamers, needed easier facilitated interactions between their streamers and 
-    viewers and the means of reward distribution. The proposed solution to help these influencers is to create a bot for each of the platforms
-    Twitch and YouTube. These bots can monitor the live chat and respond to viewers, all while keeping track of milestones for the streamer.
-  </p>
-  <p>The bot will be deployed on Acclaim's servers, with streamer's accessing the bot via their Acclaim dashboard. Through the live chat, the
-    streamer will be able to interact with the bot and type commands in to start a giveaway, change their stream game and tile, and overall increase
-    interactivity with the audience. 
-  </p>
-  <h2>How the bot works</h2>
-  <p> The bot will be running on Acclaim's servers, while streamers can access their bot via their Acclaim dashboards. We created a prototype of what
-    the dashboard could look like as part of this prototype. INSERT DASHBOARD PHOTO 
-    As long as a streamer has browser access and stable internet, from the dashboard, they can control what commands they allow in chat,
-    create new commands, and alter their milestones as they grow as streamers.
-  </p>
-  <p> While the bot is in the streamer's chat, it will monitor the live chat and be able to respond to commands, both from the audience and their moderators,
-    and even some easter egg abilities are available to the streamer. Moderators will be able to access unique commands only available to them, such as starting
-    a giveaway or even updating the streamer's game title.
-  </p>
-  <p>One example of bot and audience interaction is with giveaways. Giveaways can be triggered by moderators typing in "!giveaway start", but can also be triggered by reaching goals and milestones 
-    that the streamer setup through their dashboard. So if a streamer reaches their chat milestone, which is the number of chat interactions, the bot auto starts a giveaway. Audience members
-    can enter the giveaways by typing "!enter" in to the chat and the bot will add them to the entered array it has stored. Moderators can then end giveaways via "!giveaway stop". 
-  </p>
-  <p>
-    The bot is able to keep track of multiple streams at once, and keeps track of data individually for each stream. This is done by using Amazon Web Services and storing information in the database.
-  </p>
-  <h2> The Future of this Project </h2>
-</div>
-   
-</body>
-</html> 
+        <div class="main">
+          <img src="https://cdn.discordapp.com/attachments/933032870644174871/954550934967566366/20220317_212824-01.jpeg" width="30%" height="30%" alt="Acclaim Streamer">
+          <h1> Acclaim X BSU's DreamStream </h1>
+          <h2> Amara Tariq, Brandon Fung, Angel Legaspi, and John Capone </h2>
+          <h2>Abstract</h2>
+          <p>Acclaim, a company dedicated to supporting up and coming streamers, needed easier facilitated interactions between their streamers and
+            viewers and the means of reward distribution. The proposed solution to help these influencers is to create a bot for each of the platforms
+            Twitch and YouTube. These bots can monitor the live chat and respond to viewers, all while keeping track of milestones for the streamer.
+          </p>
+          <p>The bot will be deployed on Acclaim's servers, with streamer's accessing the bot via their Acclaim dashboard. Through the live chat, the
+            streamer will be able to interact with the bot and type commands in to start a giveaway, change their stream game and tile, and overall increase
+            interactivity with the audience.
+          </p>
+          <h2>How the bot works</h2>
+          <p> The bot will be running on Acclaim's servers, while streamers can access their bot via their Acclaim dashboards. We created a prototype of what
+            the dashboard could look like as part of this prototype, which can be seen under our demos.
+            As long as a streamer has browser access and stable internet, from the dashboard, they can control what commands they allow in chat,
+            create new commands, and alter their milestones as they grow as streamers.
+          </p>
+          <p> While the bot is in the streamer's chat, it will monitor the live chat and be able to respond to commands, both from the audience and their moderators,
+            and even some easter egg abilities are available to the streamer. Moderators will be able to access unique commands only available to them, such as starting
+            a giveaway or even updating the streamer's game title.
+          </p>
+          <p>One example of bot and audience interaction is with giveaways. Giveaways can be triggered by moderators typing in "!giveaway start", but can also be triggered by reaching goals and milestones
+            that the streamer setup through their dashboard. So if a streamer reaches their chat milestone, which is the number of chat interactions, the bot auto starts a giveaway. Audience members
+            can enter the giveaways by typing "!enter" in to the chat and the bot will add them to the entered array it has stored. Moderators can then end giveaways via "!giveaway stop".
+          </p>
+          <p>
+            The bot is able to keep track of multiple streams at once, and keeps track of data individually for each stream. This is done by using Amazon Web Services and storing information in the database.
+          </p>
+          <h2> The Future of this Project </h2>
+        </div>
+    </body>
+</html>
