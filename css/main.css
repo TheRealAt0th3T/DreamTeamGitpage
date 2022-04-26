@@ -6,8 +6,12 @@ h2{
   font-size: 20px;
 }
 
-p{
+p {
   font-size: 14px;
+}
+
+li {
+    font-size: 14px;
 }
 
 .sidenav {
